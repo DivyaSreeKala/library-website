@@ -1,0 +1,94 @@
+
+/* Both the html and body elements need to have their 
+heights set to 100% to ensure that percentage heights for 
+child elements are calculated correctly. This is because 
+the height of a percentage-based element is calculated 
+relative to the height of its parent. If the parent 
+element does not have a defined height, the
+ browser cannot calculate the percentage height correctly. */
+body,html{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(202, 202, 202);
+}
+.outer-box{
+    background-color: rgb(99, 134, 99);
+    width: 300px;
+    height: 35  0 px;
+    min-width: fit-content;
+    min-height: fit-content;
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: 0px  4px 8px rgb(68, 75, 69);
+}
+.outer-box .login{
+    width: 100%;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.outer-box .login h1{
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 22px;
+}
+.outer-box .login form{
+    color: white;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.outer-box .login form input{
+    border-radius: 6px;
+    border: none;
+    height: 26px;
+    width: 60%;
+    /* padding: 5px; */
+    margin-top: 10px;
+    padding: 4px;
+}
+input:active{
+    border: 1px solid green;
+}
+
+.login-btn,.a-tag{
+    
+     background-color: green;
+     border: none;
+     color: white;
+     font-weight: bold;
+        min-height: 35px;
+     width: 20%;
+     border-radius: 6px;
+     box-shadow: 1px 1px 5px rgb(68, 75, 69);
+     margin-bottom: 10px;
+}
+
+.login-btn:hover{
+    background-color: rgb(198, 252, 198);
+    color: green;
+}
+
+.outer-box .login a{
+    padding-bottom: 4px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.outer-box .login a:hover{
+    color: rgb(198, 252, 198);
+}
+
+
+
+  
